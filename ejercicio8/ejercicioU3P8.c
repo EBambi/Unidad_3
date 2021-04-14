@@ -17,7 +17,6 @@ int main(int argc, char *argv[])
         exit(EXIT_FAILURE);
     }
 
-
     if (pipe(pfd) == -1){ /* Create the pipe */
         perror("pipe");
         exit(EXIT_FAILURE);
