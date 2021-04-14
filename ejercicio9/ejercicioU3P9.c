@@ -4,11 +4,11 @@
 #include <stdio.h>
 #include <string.h>
 
-#define BUF_SIZE 16
+#define BUF_SIZE 50
 
 int main(int argc, char *argv[])
 {
-    int pfd[2], pid, nbytes; /* Pipe file descriptors */
+    int pfd[2], pid, nbytes;
     char buf[BUF_SIZE];
     ssize_t numRead;
 
