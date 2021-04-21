@@ -6,7 +6,7 @@
 #include <unistd.h>
 
 int main(int argc, char *argv[]){
-    sem_t *sem = sem_open("Ejemplo Semáforo",0);
+    sem_t *sem = sem_open("semEjemplo",0);
 
     if(sem == SEM_FAILED){
         perror("Error al crear en post: ");

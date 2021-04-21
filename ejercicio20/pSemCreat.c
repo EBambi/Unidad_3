@@ -11,7 +11,7 @@ int main(int argc, char *argv[]){
 
     unsigned int value = 0;
 
-    sem_t *sem = sem_open("Ejemplo semáforo",flags,permisos,value);
+    sem_t *sem = sem_open("semEjemplo",flags,permisos,value);
 
     if(sem == SEM_FAILED){
         perror("Error al crear el semáforo: ");

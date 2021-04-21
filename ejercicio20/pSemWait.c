@@ -7,7 +7,7 @@
 
 int main(int argc, char *argv[]){
 
-    sem_t *sem = sem_open("Ejemplo semáforo",0);
+    sem_t *sem = sem_open("semEjemplo",0);
 
     if(sem == SEM_FAILED){
         perror("Error al crear el semáforo en wait");
@@ -26,7 +26,7 @@ int main(int argc, char *argv[]){
         exit(EXIT_FAILURE);
     }
 
-    if(sem_unlink("Ejemplo Semáforo") == -1){
+    if(sem_unlink("semEjemplo") == -1){
         perror("Error del unlink: ");
         exit(EXIT_FAILURE);
     }
